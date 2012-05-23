@@ -1,0 +1,1 @@
+javascript:void(function(d,a,c,b){b=a.createElement('script');b.id='weiblols_script';b.setAttribute('charset','utf-8');b.src='http://www.weibols.com/weibols/collect.js?'+Math.floor(+new Date()/1E7);a.body.appendChild(b);}(window,document,''))

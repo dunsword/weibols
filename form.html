@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script src="./xheditor-1.1.13/xheditor-1.1.13-zh-cn.min.js"></script>
+<script src="./xheditor-1.1.13/xheditor_plugins/ubb.min.js"></script>
+<title>表单提交</title>
+</head>
+
+<body>
+<h1>表单</h1>
+
+<form action="postContent">
+<textarea id="edit1"></textarea>
+<script language="javascript">
+	var editor1=$('#edit1').xheditor(
+		{tools:'FontSize,Fontface,Align,Blocktag,|,Source,Preview',
+		 width:500, 
+		 height:200,beforeSetSource:ubb2html,beforeGetSource:html2ubb
+		}
+	);
+	
+</script>
+<br/>
+<button>提交</button>
+
+</form>
+<button onclick="editor1.pasteHTML('<b>added</b>')">添加</button>
+</body>
+</html>
