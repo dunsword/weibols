@@ -1,4 +1,4 @@
-// cookieç±»
+// cookieÀà
 function Cookies(){
 	this.cookies=[];
 	
@@ -7,7 +7,9 @@ function Cookies(){
 			this.addCookie(setCookies[i]);
 		}
 	}
-	
+	/*
+	 * ´«Èë²ÎÊıcitemÊÇ´ÓheaderÖĞÄÇµ¹µÄcookieÊı×éÄÚÈİ£¬ÓÉ${name}:${value},domain=${domain},expires=${expires},path=${path}¹¹³É 
+	 */
 	this.addCookie=function(cItem){
 		var ci=new CookieItem(cItem);
 		this.cookies[ci.name]=ci;
@@ -22,8 +24,8 @@ function Cookies(){
 	}
 }
 /**
- ç”¨äºä¿å­˜ä¸€ä¸ªcookieé¡¹ï¼Œæ ¹æ®setCookieçš„å€¼å­—ç¬¦ä¸²æ„é€ ï¼Œå¦‚ï¼šDomain=.19lou.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
- åŒ…å«åŸŸï¼šnameã€valueã€pathã€expires
+ ÓÃÓÚ±£´æÒ»¸öcookieÏî£¬¸ù¾İsetCookieµÄÖµ×Ö·û´®¹¹Ôì£¬Èç£ºDomain=.19lou.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+ °üº¬Óò£ºname¡¢value¡¢path¡¢expires
 */
 function CookieItem(cookieItem){
 		this.cookieItem=cookieItem;
