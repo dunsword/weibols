@@ -25,7 +25,6 @@ function login(username,password,callback){
 					body+=chunk;
 								   });
 			res.on('end',function(){
-					util.log("BODY:");
 					var lform=paserLoginPage(body,username,password);
 					postForm(lform,cookies,callback);
 			});
