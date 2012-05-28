@@ -48,7 +48,7 @@ function CookieItem(cookieItem){
 					}
 					else {
 						this.name=pair[0].trim();
-				f		this.value=pair[1].trim();
+						this.value=pair[1].trim();
 					}
 				}
 			}
