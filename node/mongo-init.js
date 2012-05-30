@@ -15,16 +15,25 @@ NoteSchema=new Schema({
 	author: String,
 	note: String
 });
-connect(function(){
-	console.log('to save');
-	mongoose.model('Note',NoteSchema);
-	var Note=mongoose.model('Note');
+mongoose.model('Note',NoteSchema);
+
+
+var conn=mongoose.createConnection(function(){
+	var Note=conn.model('Note');
 	console.log('note:'+Note);
 	var nn=new Note();
 	nn.author='Paul';
 	nn.note='Good Book';
+	
 	console.log('to save');
 	
+	nn.save();
+	
+	conn.disconnect(function(){
+	 	console.log('disconnected');
+	 });
+
+	/**
 	nn.save(function(err){
 	if(err)
 	 	console.log('err: '+err);
@@ -34,5 +43,5 @@ connect(function(){
 	 disconnect(function(){
 	 	console.log('disconnected');
 	 });
-});
+});*/
 });
