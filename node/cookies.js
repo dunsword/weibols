@@ -20,7 +20,7 @@ function Cookies(){
 	
 	this.setCookies=function(setCookies){
 		for(var i=0;i<setCookies.length;i++){
-			this.addCookie(setCookies[i]);
+			saveCooke(setCookies[i]);
 		}
 	}
 	/*
@@ -39,6 +39,14 @@ function Cookies(){
 		return str;
 	}
 }
+
+function saveCookies(cookies){
+	for(var i=0;i<setCookies.length;i++){
+			saveCookie(setCookies[i]);
+	}
+}
+
+
 /**
  用于保存一个cookie项，根据setCookie的值字符串构造，如：uname=Paul;Domain=.19lou.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
  包含域：name、value、path、expires
