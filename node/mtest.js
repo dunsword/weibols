@@ -7,6 +7,8 @@ var Note=conn.model('Note');
 var anote=new Note();
 anote.author="Paul";
 anote.note='Hello!';
+anote.title='Note1';
+
 
 anote.save(function(err){
 	if(err){
@@ -19,7 +21,7 @@ anote.save(function(err){
 
 Note.find({},function(err,docs){
 	util.log(util.inspect(docs));
-	conn.disconnect(function(){
+	conn.close(function(){
 		mongo.close();
 	});
 	
