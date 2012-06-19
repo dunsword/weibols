@@ -19,7 +19,7 @@ anote.save(function(err){
 
 Note.find({},function(err,docs){
 	util.log(util.inspect(docs));
-	conn.disconnect(function(){
+	conn.close(function(){
 		mongo.close();
 	});
 	
