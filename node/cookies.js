@@ -46,6 +46,11 @@ function saveCookies(cookies){
 	}
 }
 
+function getCookies(inDomain){
+	CookieItem.find({domain:inDomain},function(err,docs){
+		 
+	});
+}
 
 /**
  用于保存一个cookie项，根据setCookie的值字符串构造，如：uname=Paul;Domain=.19lou.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
