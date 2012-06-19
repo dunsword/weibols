@@ -13,7 +13,8 @@ disconnect=function(callback){
 NoteSchema=new Schema({
 	ts : {type:Date, default: Date.now},
 	author: String,
-	note: String
+	note: String,
+	title:String
 });
 mongoose.model('Note',NoteSchema);
 

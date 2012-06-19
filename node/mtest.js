@@ -7,6 +7,8 @@ var Note=conn.model('Note');
 var anote=new Note();
 anote.author="Paul";
 anote.note='Hello!';
+anote.title='Note1';
+
 
 anote.save(function(err){
 	if(err){
