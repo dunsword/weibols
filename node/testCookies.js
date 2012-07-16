@@ -1,5 +1,10 @@
 var mongoose=require('mongoose');
 var cookies=require('./cookies');
+
+
+function setup(){
+}
+
 var dbUrl='mongodb://localhost/weibols';
 
 mongoose.connect(dbUrl);
@@ -13,3 +18,4 @@ cookies.saveCookie(cookieString,function(result,message){
 	}
 	mongoose.disconnect();
 });
+
