@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 	<title>猎手</title>
-	<!-- 
+	
     	<link rel="stylesheet" href="./jquery-ui-1.8.21.custom/development-bundle/themes/base/jquery.ui.all.css"/>
-     -->
-    <link rel="stylesheet" href="./jquery-ui-1.8.21.custom/development-bundle/demos/demos.css"/>
+        <link rel="stylesheet" href="./jquery-ui-1.8.21.custom/development-bundle/demos/demos.css"/>
 	<script src="./jquery-ui-1.8.21.custom/development-bundle/jquery-1.7.2.js"></script>
 	<script src="./jquery-ui-1.8.21.custom/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="./jquery-ui-1.8.21.custom/development-bundle/ui/jquery.ui.widget.js"></script>

@@ -34,7 +34,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { margin: 0; font-size: 1em; line-height: 1.4; height: 2000px }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -43,7 +43,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  */
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #06F; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -204,7 +204,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    ========================================================================== */
 
 table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
+td { vertical-align: middle; line-height:50px}
 
 
 /* =============================================================================
@@ -290,4 +290,93 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+
+/* my code */
+#header { 
+			height:40px; line-height:40px;
+			width:100%; 
+			/*background-color: #F7F7F7;
+			background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(247, 246, 245));
+			background-repeat-x: initial;
+			background-repeat-y: initial;
+			background-attachment: initial;
+			background-position-x: initial;
+			background-position-y: initial;
+			background-origin: initial;
+			background-clip: initial;
+			*/
+			background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(255, 255, 255)), to(rgb(247, 246, 245))); 
+			font-size:25px;
+			color:#000000;
+			vertical-align:middle;
+			text-align:center;
+			box-shadow:5px 5px 5px #CCCCCC; 
+}
+#header nav{
+	display:inline-block;
+	font:18px "Microsoft Yahei";
+	/*
+	font-size:18px ;
+	font-family:"helvetica neue",arial,sans-serif;
+	*/
+}
+#header nav ul li{
+	padding-left:5px;
+	padding-right:5px;
+	margin:0  0;
+	display:inline-block;
+	width:80px;
+}
+#header nav ul li:hover{
+	/*box-shadow: 2px 0px 2px grey;*/
+	border-left: solid 1px grey;
+	border-right: solid 1px grey;
+	background-color:#CCCCCC;
+	padding-top:10px;
+	padding-bottom:7px;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+}
+
+#header span{
+	font-size: 15px;
+	font-family:"Microsoft Yahei";
+}
+#header #header-user-url{
+	padding:5px;
+	-webkit-border-radius:5px;
+}
+#header #header-user-url:hover{
+	background: #CCCCCC;
+	border:solid 1px grey;
+}
+#header a, #header a:visited{
+	text-decoration: none;
+	color: black;
+}
+#main {
+	width:980px;
+	height:auto;
+	margin:20px auto;
+}
+.article{
+	display:inline-block;
+	vertical-align:top;
+	width:220px;
+	height:auto;
+	overflow:visible;
+	border:solid 1px  #CCCCCC;
+	margin: 5px 5px;	
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	box-shadow: 3px 3px 3px grey;
+	padding: 5px;
+}
+
+ul {
+	display:inherit;
+}
+li {
+	display:inherit;
 }
