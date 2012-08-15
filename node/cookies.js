@@ -48,7 +48,7 @@ function saveCookies(cookies){
 
 function getCookies(inDomain){
 	CookieItem.find({domain:inDomain},function(err,docs){
-		 
+		 console.log(docs);
 	});
 }
 
@@ -89,7 +89,6 @@ function saveCookie(cookieString,callback){
 							callback(false,err);
 					}else{
 							CookieItem.findOne({domain:cdomain,name:cname},function(err,doc){
-								console.log(util.inspect("result="+doc));
 								callback(true,'cookie saved!');
 							});
 							
